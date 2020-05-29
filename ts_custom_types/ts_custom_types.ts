@@ -113,14 +113,38 @@ let toPoint  = new Point(4);
 toPoint.x = 10
 toPoint.draw();
 */
+
 //https://www.youtube.com/watch?v=k5E2AVpwsko
 //PROPERTIES: 1:13:06
-class Point {// Use always Pascal notation     
+/*class Point {// Use always Pascal notation     
+    constructor(private _x?:number, private _y?: number) { //Optional parameters       
+    }
+    draw(){
+        console.log('X:' + this._x + ', Y:' + this._y);
+    }    
+
+    get x(){ // this allow us use as a property(outside) but is a method(inside)
+        return this._x;
+    }
+
+    set x(value){
+        if(value < 0)
+            throw new Error('Value cannot be less than 0');
+        this._x = value;
+    }
+}
+let toPoint  = new Point(1,4);
+let x = toPoint.x;//the call is like a call a property but it's a get method
+toPoint.draw();*/
+
+//Modules
+/*class Point {// Use always Pascal notation     
     constructor(private x?:number, private y?: number) { //Optional parameters       
     }
     draw(){
         console.log('X:' + this.x + ', Y:' + this.y);
-    }    
+    }   
+
 }
 let toPoint  = new Point(1,4);
-toPoint.draw();
+toPoint.draw();*/
